@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class UserController {
-
+    //
     @GetMapping("/details")
     public String details(Model model){
         model.addAttribute("title", "Hola mundo");
@@ -15,7 +15,7 @@ public class UserController {
 
         return "details";
     }
-
+    //
     @GetMapping("/info")
     public String info(Model model){
         model.addAttribute("title", "Info");
