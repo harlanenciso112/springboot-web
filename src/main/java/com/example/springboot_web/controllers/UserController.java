@@ -1,5 +1,5 @@
 package com.example.springboot_web.controllers;
-g
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,5 +22,13 @@ public class UserController {
         model.addAttribute("info", "info app");
 
         return "info";
+    }
+
+    @GetMapping("/main")
+    public String info(Model model){
+        model.addAttribute("title", "main");
+        model.addAttribute("info", "info app");
+
+        return "main";
     }
 }
