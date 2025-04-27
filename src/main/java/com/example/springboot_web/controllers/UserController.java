@@ -24,14 +24,6 @@ public class UserController {
         return "info";
     }
 
-    @GetMapping("/main")
-    public String main(Model model){
-        model.addAttribute("title", "main");
-        model.addAttribute("info", "info app");
-
-        return "main";
-    }
-
     @GetMapping("/home")
     public String home(Model model){
         model.addAttribute("title", "home");
