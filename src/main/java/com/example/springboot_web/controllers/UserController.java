@@ -24,11 +24,11 @@ public class UserController {
         return "info";
     }
 
-    @GetMapping("/main")
-    public String info(Model model){
-        model.addAttribute("title", "main");
-        model.addAttribute("info", "info app");
+    @GetMapping("/home")
+    public String home(Model model){
+        model.addAttribute("title", "home");
+        model.addAttribute("home", "home app");
 
-        return "main";
+        return "+home";
     }
 }
