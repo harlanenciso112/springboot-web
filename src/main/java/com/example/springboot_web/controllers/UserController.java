@@ -25,10 +25,18 @@ public class UserController {
     }
 
     @GetMapping("/main")
-    public String info(Model model){
+    public String main(Model model){
         model.addAttribute("title", "main");
         model.addAttribute("info", "info app");
 
         return "main";
+    }
+
+    @GetMapping("/home")
+    public String home(Model model){
+        model.addAttribute("title", "home");
+        model.addAttribute("home", "home app");
+
+        return "+home";
     }
 }
